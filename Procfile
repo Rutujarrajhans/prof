@@ -1,0 +1,1 @@
+web:gunicorn prof.wsgi --log-file

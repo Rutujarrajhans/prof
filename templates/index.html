@@ -1,0 +1,802 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body{
+    background-color:lightblue";
+}
+
+.container{
+    padding: 75px;
+      border-color: darkcyan
+}    
+
+.navbar{
+    background-color: black;
+}
+
+#education{
+    padding-top: 50px;
+}
+
+.feature-area{
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+background-position: center;
+background-attachment: fixed;
+}
+
+.single-feature
+{
+    border-bottom-length: 50px;
+    border-bottom-color: #efefef;    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+}
+
+.more-feature-area{
+    padding: 0 100px;
+}
+
+.feature-list ul{
+list-style: none;
+
+}
+.feature-list li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+
+}
+.feature-list li:hover i{
+color: white;
+background-color: darkskyblue;
+-webkit-transition: .5s ease;
+-moz-transition: .5s ease;
+-o-transition: .5s ease;
+-ms-transition: .5s ease;
+
+}
+
+.feature-icon{
+    position: absolute;
+    left:0;
+
+}
+
+.feature-icon i{
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    font-size: 30px;
+    background: white;
+    color: deepskyblue;
+    border-radius: 50%;
+    border: 2px solid deepskyblue;
+    line-height: 63px;
+}
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
+
+  .testimonials{
+      background-image: url("achbg.jpg");
+      background-color: white;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding-top: 120px;
+      padding-bottom: 120px;
+  }
+  .testimonials.carousel-indicators{
+      bottom: -60px;
+  }
+
+
+  .team-area{
+      padding: 100px 0px;
+  }
+
+  .team-area.sub-heading{
+      margin-bottom: 100px;
+  }
+  .team-man{
+      position: absolute;
+      left: 50%;
+      margin-left: -50px;
+      top: -50px;
+      overflow: hidden;
+      min-height: 100px;
+      height: 100px;
+      width: 100px;
+      min-width: 100px;
+      border: 10px solid deepskyblue;
+      border-radius: 50%;
+
+  }
+
+  .team-man img{
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      min-width: 100%;
+      border-radius: 50%
+  }
+
+  .team-block h3{
+      color: dodgerblue;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 70px;
+      margin-bottom: 5px;
+
+
+  }
+  .team-block:hover .team-description{
+      background-color: deepskyblue;
+      color:white;
+      transition: .3s ease;
+  }
+</style>
+
+    <title>Dr.Anjali Yeole</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/CSSstyle.css' %}">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+  <meta content="" name="description">
+  <script src="https://kit.fontawesome.com/7939d97194.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+<body id="mybody" >
+	<nav class="navbar  navbar-expand-sm bg-dark fixed-top" id="mainNav">
+  
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+      <div class="navbar-collapse collapse " id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#books">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#interactions">Interactions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+                
+        </ul>
+      </div>  
+  </nav>
+  
+       
+                 
+        
+ <!--Home starts from here-->
+ <section id="home" class="home-mf sect-pt4 route mt-5 ">
+ 
+   <div class="container" id="landing" >
+       <div class="row overlay display-w3lsagile vertical-align" style="padding-left: 70px; padding-right: 70px; padding-top: 80px; padding-bottom: 40px;">
+         <div class="col-md-4 col-sm-12 col-xs-12 img_me" style="padding-left: 0px; padding-right: 0px;">
+          <body>
+           <img src="https://www.the74million.org/wp-content/uploads/2019/03/Google-Digital-Skills-Lede.jpg " height="500px" width="500px" style="padding-right: 175px" alt="There was supposed to be a image here" id="profile_img"/>
+          </body>
+          </div>
+         <div class="col-md-8 col-sm-12 col-xs-12 banner-text-w3-agileitss info_me">
+           <div id="about-me-snap" style="margin-top: 30px; margin-bottom: 15px;">
+             <div class="container container-name">
+               <hr>
+               <h2 style="color: burlywood">Dr Anjali Yeole</h2>
+               <hr>
+             </div>
+            <h4> <p style="color: mediumaquamarine">Assistant Professor, Vivekanand Education Society's Institute of Technology, Certified IOT trainer, Ph.d in Technology</p> </h4>
+           </div>
+           <br><br><br>
+           
+         </div>
+         
+       </div>
+       <div class="clearfix"></div>
+     </div>
+                
+ </body>
+ </html>
+
+  
+  <section id="about" class="about-mf sect-pt4 route mt-5">
+    <div class="container" style="padding: 75px; background-color: darkcyan; border-style: inset; border-color: red">    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="title-box text-center">
+                  <h3 class="title-a">
+                    <b>ABOUT</b>
+                  </h3>
+                  <p class="subtitle-a">
+                    <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
+                  </p>
+                  <div class="line-mf"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                
+                  <div class="col-sm-6 col-md-3 offset-md-1">
+                    <div class="about-img">
+                      <img src="https://www.the74million.org/wp-content/uploads/2019/03/Google-Digital-Skills-Lede.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                    <div class="area-of-expertise" style="border-style: none; background-color: skyblue">
+                    <h5 style="padding-left: 20px; "><u>Areas of Expertise</u></h5>
+                    <ul style="color: #666;" type="square">
+                      <li><p style="color: #6700ff; margin: 0;">Internet of Things</p></li>
+                      <li><p style="color: #6700ff; margin: 0;">System Security</p></li>
+                      <li><p style="color: #6700ff; margin: 0;">Computer Network and Web Technology</p></li>
+                  </ul>
+                </div>
+                </div>
+         
+                <div class="col-md-7">
+                <div class="about-me pt-4 pt-md-0">
+                
+                  <p class="justify about-text">
+                    Dr. Anjali Yeole is currently serving as an Assistant Professor, in Vivekanand Education Society’s Institute of Technology(VESIT), Mumbai University, Mumbai, India. He has obtained a Ph.D in Technology from University of Mumbai, Mumbai in 2019.She has published various research papers in international journals and international conferences including IEEE, ACM , Springer and free journal. She has reviewed many papers for conferences and journals.She has reviewed two books “  Computer Organization and Architecture” and “Internet of Things'' by Shriram K. Vasudevan, Abhishek S. Nagarajan, and R. M. D. Sundaram”. She authored two books “Information Management” and “Internet of Everything”.She is a certified IoT trainer. She has completed Microsoft Certification for “Cryptography and System Security” and NPTEL certification for “System Security”.  Her areas of interest are IoT, Parallel Computing, Distributed Computing, Virtualization and Cloud Computing, System Security, Computer Network and Web Technology. She has also delivered and conducted workshops, seminars and expert talks.She has patented innovative ideas for her research work. 
+                   </p>
+               
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+
+  <section id="education" class="services-mf route sect-pt4">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        <b>Education</b>
+                    </h3>
+                    <p class="subtitle-a">
+
+                    </p>
+                    <div class="row-scroll">
+                      <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="service-box">
+                            <div class="service-content">
+                                <h2 class="s-title">
+                                    <strong>
+                                        <u>PH.D In Technology</u>
+                                      </u>
+                                    </strong>
+                                </h2>
+                                <div class="about-info col-md-8 offset-md-2">
+                                    <p>
+                                        <span class="title-s"><strong>Major: </strong></span>
+                                          <span>Technology</span>
+                                      </p>
+                                      <p>
+                                          <span class="title-s"><strong>University: </strong></span>
+                                            <span>Mumbai</span>
+                                        </p>
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row-scroll">
+                        <div class="col-md-12">
+                            <div class="service-box">
+                                <div class="service-content">
+                                    <h2 class="s-title">
+                                        <strong>
+                                            <u>Master Of Technology (M.TECH.) In Computer Engineering</u>
+                                        </strong>
+                                    </h2>
+                                    <div class="about-info col-md-8 offset-md-2">
+                                        <p>
+                                            <span class="title-s"><strong>Major: </strong></span>
+                                            <span>Computer Engineering</span>
+                                        </p>
+                                        <p>
+                                        <span class="title-s"><strong>Institute: </strong></span>
+                                        <span>Veermata Jijabai Technological Institute</span>
+                                            </p>
+                                            <p>
+                                                <span class="title-s"><strong>Univeristy:</strong></span>
+                                                <span>Mumbai University</span>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+    
+    <div class="row-scroll">
+        <div class="col-md-12">
+      <div class="col-md-12">
+          <div class="service-box">
+              <div class="service-content">
+                  <h2 class="s-title">
+                      <strong>
+                          <u>Bachelor of Engineering (B.E.) in Computer Engineering</u>
+                        </u>
+                      </strong>
+                  </h2>
+                  <div class="about-info col-md-8 offset-md-2">
+                      <p>
+                          <span class="title-s"><strong>Major: </strong></span>
+                            <span>Computer Engineering</span>
+                        </p>
+                        <p>
+                            <span class="title-s"><strong>Institue: </strong></span>
+                              <span>SNDT</span>
+                          </p>
+                        
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+</section>
+<section>
+    <section id="books" class="books-mf sect-pt4 route mt-5 feature-area">
+        <div class="container">    
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box text-center">
+                      <h3 class="title-a">
+                        <b>Books Published</b>
+                      </h3>
+                      <p class="subtitle-a">
+                        <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
+                      </p>
+                      <div class="line-mf"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+    
+    <div class="row">
+        <div class="col-sm-12 col-lg-8 text: center">/
+<div class="feature-block">
+<div class="single-feature">
+    <div class="circle"></div>
+    <span class="featured-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTE5nXZYIuj_ECrWFOUEmplTfvzzvIIoeitiLh-7lcRw0DS83gq&usqp=CAU" alt=""></span>
+    <h3>Internet of Everything</h3>
+</div>
+<div class="single-feature">
+    <div class="circle"></div>
+    <span class="featured-icon"><img src="https://i.ytimg.com/vi/LlhmzVL5bm8/maxresdefault.jpg" alt=""></span>
+    <h3>Information Management</h3>
+</div>
+
+        </div>
+        </div>
+        <div class="col-sm-4 col-lg-lg">
+            <div class="feature-mockup">
+                <image src="https://realvatechnologies.com/wp-content/uploads/2019/06/Internet-Services.jpg" class="img-responsive"></image>
+            </div>
+    </div>
+</section>
+<section id="awards" class="awards-mf sect-pt4 route mt-5 feature-area" >
+<section class="more-feature-area" id="more_feature">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <div class="title">
+        <h2><b>Awards</b></h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
+      <img src="https://www.reliancegeneral.co.in/SiteAssets/RgiclAssets/images/AwardsImages/2016.jpg" class="img-responsive" width="500px" height="500px" alt="">
+    </div>
+    <div class="col-sm-12 col-md-5">
+      <div class="feature-list">
+        <ul>
+          <li>
+            <div class="feature-icon">
+              <i class="fas fa-award fa-3x"></i>
+            </div>
+            <div class="feature-details">
+              <h3>Certified IoT Trainer</h3>
+
+
+
+            </div>
+</li>
+          <li>
+            <div class="feature-icon">
+              <i class="fas fa-award fa-3x"></i>
+            </div>
+            <div class="feature-details">
+              <h3>Microsoft Certification for Cryptography and System Security</h3>
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon">
+              <i class="fas fa-award fa-3x"></i>
+            </div>
+            <div class="feature-details">
+              <h3>NPTEL Certification for System Security</h3>
+</div>
+</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="testimonials" id="testimonial" style="background-color: darkgray">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+          
+            <div class="sub-heading">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+          <div id="bgtext" class="randomtext">
+            <h4>This is just some random text</h4>
+            <ul>
+              <li> Subjects to ecstatic children he. Could ye leave up as built match. Dejection agreeable attention set suspected led offending. Admitting an performed supposing by. Garden agreed matter are should formed temper had. Full held gay now roof whom such next was.</li>
+              <li>Ham pretty our people moment put excuse narrow. Spite mirth money six above get going great own. Started now shortly had for assured hearing expense. Led juvenile his laughing speedily put pleasant relation offering.</li>
+
+
+
+            </ul>
+
+
+
+
+          </div>
+            <div id="carousel-testimonials" class="carousel-slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+        <li data-target="carousel-testimonials" data-slide-to="0" class="active"></li>
+        <li data-target="carousel-testimonials" data-slide-to="1" ></li>
+        <li data-target="carousel-testimonials" data-slide-to="2" ></li>
+</ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+            <img src="https://5.imimg.com/data5/SM/ZI/DY/SELLER-42012147/ribbon-gold-medal-500x500.jpg" class="center-block" alt="">
+            <h4>Certifications</h4>
+            <p>She is a certified Iot Trainer. She has completed Microsoft certification for <em>Cryptography and System Security</em>and<em> NPTEL certification for System Security</em></p>
+        </div>
+    
+            <div class="carousel-item  text-center">
+                <img src="https://www.freepngimg.com/thumb/book/6-books-png-image-with-transparency-background.png" class="center-block" alt="">
+                <h4>Publications</h4>
+                <p>She has published various research papers in international journals and international conferences including IEEE,ACM,Springer and free journal.</p>
+            </div>
+        
+                <div class="carousel-item text-center">
+                    <img src="https://5.imimg.com/data5/SM/ZI/DY/SELLER-42012147/ribbon-gold-medal-500x500.jpg" class="center-block" alt="">
+                    <h4>Reviews</h4>
+                    <p>.She has reviewed two books <em>Computer
+                        Organization and Architecture</em> and <em>Internet of Things</em> by Shriram K. Vasudevan, Abhishek S.
+                        Nagarajan, and R. M. D. Sundaram”. </p>
+                </div>
+    </div>
+
+            </div>-->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</section>
+<section id="achievements" class="services-mf route sect-pt4">
+<section class="team-area" id="team">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2 style="padding-bottom: 150px"><b>Achievements</b></h2>
+      <div class="sub-heading">
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <div class="team-block">
+      <div class="team-man">
+        <img src="https://5.imimg.com/data5/SM/ZI/DY/SELLER-42012147/ribbon-gold-medal-500x500.jpg" alt="">
+      </div>
+      <div class="team-description">
+        <div class="team-title">
+          <h3>Certifications</h3>
+           </div>
+           <p>She is a certified Iot Trainer. She has completed Microsoft certification for <em>Cryptography and System Security</em> and <em> NPTEL certification for System Security.</em></p>
+
+           </p>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="team-block">
+      <div class="team-man">
+        <img src="https://5.imimg.com/data5/SM/ZI/DY/SELLER-42012147/ribbon-gold-medal-500x500.jpg" alt="">
+      </div>
+      <div class="team-description">
+        <div class="team-title">
+          <h3>Publications</h3>
+           </div>
+           <p>She has published various research papers
+            in international journals and international conferences including IEEE, ACM , Springer and free journal.</p>
+
+           </p>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="team-block">
+      <div class="team-man">
+        <img src="https://5.imimg.com/data5/SM/ZI/DY/SELLER-42012147/ribbon-gold-medal-500x500.jpg" alt="">
+      </div>
+      <div class="team-description">
+        <div class="team-title">
+          <h3>Reviews</h3>
+           </div>
+           <p>She has reviewed two books <em> Computer
+            Organization and Architecture<em> and <em>Internet of Things</em> by Shriram K. Vasudevan, Abhishek S.
+            Nagarajan, and R. M. D. Sundaram.</p>
+
+           </p>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+</div>
+</section>
+<section id="interactions" class="route sect-pt4 mt-5">
+
+  <title>Interactions</title>
+  
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 10px;
+    position: sticky;
+  }
+  div.col-8 div {
+     height: 600px;
+     position: sticky;
+     
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <h2 class = "text-center text-primary">INTERACTIONS</h2>
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">Teaching Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Book Reviewed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Professional Membership</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">Other Memberships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">Curriculum Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section6">Orientation Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section7">Judge</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section8">International IV</a>
+        </li>
+       
+       
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-8">
+
+      <div id="section1" class="bg-light text-primary">    
+        <h2 class="s-title"><strong><u>Teaching Experience</u></strong></h2>
+        <ol >
+                    <li class="justify">Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking.</li>
+                    <li class="justify">Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking.</li>
+                    <li class="justify">Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking.</li>
+                  </ol>
+       
+      </div>
+      <div id="section2" class="bg-light text-primary">
+        <h2 class="s-title"><strong><u>Books Reviewed</u></strong></h2>
+        <ol >
+                    <li class="justify">Reviewed Two Books "Computer Organization and Architecture" and "Internet of Things" by Shriram K Vasudevan , Abhishek S. Nagarajan and R.M.D. Sundaram</li>
+                    <li class="justify">Authored Two Books "Information Management" and "Internet of Everything"</li>
+                   
+                  </ol>
+      </div>        
+      <div id="section3" class="bg-light text-primary">        
+        <h2 class="s-title"><strong><u>Professional Memberships</u></strong></h2>
+        <ol >
+                    <li class="justify">Life member for Indian Society for Technical Education Member No: LM80901.</li>
+                    <li class="justify">Member of Association for Computing Machinery (ACM) Member No. 4829240.</li>
+                    <li class="justify">Member of The Society of Digital Information and Wireless Communications (SDIWC) Member No. 26855</li>
+
+                  </ol>
+      </div>
+      <div id="section4" class="bg-light text-primary">        
+         <h2 class="s-title"><strong><u>Other Memberships</u></strong></h2>
+         <ol >
+                    <li class="justify">If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.</li>
+                    <li class="justify">If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.</li>
+                    <li class="justify">If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.</li>
+                    <li class="justify">The International Conference on Technological Innovations in
+                      Engineering Management (ICTIEM-2017) to be held at Deogiri Institute of
+                      Engineering and Management, Aurangabad during 8th and 9th of December 2017.</li>
+        </ol>
+      </div>      
+      <div id="section5" class="bg-light text-primary">        
+        <h2 class="s-title"><strong><u>Curriculam Development</u></strong></h2>
+         <ol >
+                    <li class="justify">Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am</li>
+                    <li class="justify">Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am</li>
+                    <li class="justify">Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am</li>
+                    <li class="justify">ADraw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am.</li>
+                    <li class="justify">ADraw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am</li>
+                    <li class="justify">Acted as a reviewer on the syllabus designed “Cyber Security and Digital Forensic”for
+                      M.Tech EXTC department Sem II : 2018-19, Sardar Patel Institute of Technology
+                      Autonomous Institute Affiliated to University of Mumbai Date : 09 March 2019</li>
+                  </ol>
+      </div>
+      <div id="section6" class="bg-light text-primary">        
+        <h2 class="s-title"><strong><u>Orientation Programme </u></strong></h2>
+        <ol >
+                    <li class="justify">Delivered a Expert talk (Tech Dias Lecture) on 29 th January 2020 under the Cyber Cell
+                      on” Digital Forensic” in KJ Somaiya Engineering college Sion Mumbai.</li>
+                    <li class="justify">Faculty Orientation Program as a Resource Person for Revised syllabus 2016 TE-IT
+                      Sem-VIII (CBCGS) for the subject Enterprise Resource Planning on  10/01/2020 in
+                      Terna Engineering College</li>
+                    <li class="justify">Acted as Resource Person in Faculty Orientation Program for Revised syllabus 2016
+                      TE-IT Sem-V (CBCGS) for the subject Digital Forensic on 5 th Jan 2019 organized by
+                      Department of Information Technology of Thadomal Shahani Engineering College on
+                      behalf of University of Mumbai.</li>
+                    <li class="justify">Delivered Lectures on “STTP on 'Digital Forensics: Tools, Techniques and Current
+                      Trends'” as a Keynote speaker in a one week Short Term Training Program(STTP)
+                      organized by Department of Information Technology of Thadomal Shahani
+                      Engineering College from 2nd January to 8th January 2019. (2nd Jan and 3rd Jan
+                      2019).</li>
+                    <li class="justify">Acted as Resource Person in Faculty Orientation Program for Revised syllabus 2016
+                      TE-IT Sem-V (CBCGS) for the subject IT Enabled Service on  16 th July
+                      2018 organized by Terna College on behalf of University of Mumbai.</li>
+                    <li class="justify">Delivered a session in AICTE -ISTE approved Short Term Training Program (STTP)
+                      on “Pushing Boundaries of Wireless Technology”, on 6th January 2018 organized by
+                      Sardar Patel Institute of Technology, Andheri West.</li>            
+                  </ol>
+      </div>
+      <div id="section7" class="bg-light text-primary">        
+        <h2 class="s-title"><strong><u>Judge</u></strong></h2>
+        <ol >
+            <li class="justify">Acted as a judge for the S.P.I.T. hackathon, an intra-college hackathon, which is also a
+                      preliminary round for the national level Smart India hackathon, organized by AICTE
+                      and MHRD held on 8th Jan 2020.</li>
+                  </ol>
+        </div>
+      <div id="section8" class="bg-light text-primary">  
+        <h2 class="s-title"><strong><u>International Industrial Visit</u></strong></h2>
+        <ol >
+                    <li class="justify">Draw from upon here gone add one. He in sportsman household otherwise it perceived instantly. Is inquiry no he several excited am <a href="https://www.shahandanchor.com/global_immersion/">Click here to view Website</a> </li>
+                  </ol>
+       
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+<section id="contact" class="contact-mf sect-pt4 route mt-5 ">
+  <h1><Marquee>CONTACT-US</Marquee></h1>
+    <h3 style="background-color: rgb(53, 253, 103);"><marquee>GO AHEAD!</marquee></h3>
+<style>
+        
+   body{
+
+       
+        height: 100vh;
+        background-size:  cover;
+        background-position: center;
+      
+}
+    
+    
+</style>
+<center>
+    <p style="color:rgb(252, 13, 13);font-family:courier;">We request you while putting your queries in </br>form of message and before mailing please see that </br>you have turned your
+       " setting on for less secure app </br>in gmail settings ."</br>
+       Your information is safe with us!
+    </p>
+</center>
+   
+    <center>
+        <form method="POST">
+            {% csrf_token %}
+        <table border="1">
+        {{form}}
+    </table>
+        <input type="submit" value="send" >
+
+    </center>
+</form>
+<div class="dropdown">
+ 
+    <span style="background-color:peru;">   contact us   </span>
+   <div class="dropdown-content">
+     <p style="background-color:rgb(255, 176, 147)">  phone no : 9859278285</br>
+              insta-id:'available_'</br> THIS MAIL WILL BE DELIVERED TO 2018.rutuja.rajhans@ves.ac.in
+   </div>
+ </div> 
+</hr>
+</section>
+
+
+
+
+
